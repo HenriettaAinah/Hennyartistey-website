@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henny Artistry - Lash Extensions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Henny Artistry</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="poster">
+        <img src="images/im1.jpg" alt="Main Lash Extension Poster">
+        <div class="overlay">
+            <div>
+                <h2>Transform Your Look with Beautiful Lashes</h2>
+                <!-- Google Calendar Appointment Scheduling begin -->
+                <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+                <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+                <script>
+                (function() {
+                var target = document.currentScript;
+                window.addEventListener('load', function() {
+                    calendar.schedulingButton.load({
+                    url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1CgE3xxaFCoEdLRkaxBDh_DUBg8Bm0muDJcqu6GyEq6YZ4Nc3AIq7pxYIuL-mVWlXzFVmK_bJA?gv=true',
+                    color: '#f6a380',
+                    label: "Book Now",
+                    target,
+                    });
+                });
+                })();
+                </script>
+                <!-- end Google Calendar Appointment Scheduling -->
+            </div>
+        </div>
+    </div>
+    <section class="section" id="services">
+        <h2>Our Services</h2>
+        <p>At Henny Artistry, we offer a variety of lash extension styles to suit every need and occasion:</p>
+        <div class="images">
+            <div class="services">
+                <div class="service">
+                    <img src="images/im2.jpg" alt="Classic Lash Extensions">
+                    <p>Classic Lash Extensions</p>
+                </div>
+                <div class="service">
+                    <img src="images/im3.jpg" alt="Volume Lash Extensions">
+                    <p>Volume Lash Extensions</p>
+                </div>
+                <div class="service">
+                    <img src="images/im4.jpg" alt="Hybrid Lash Extensions">
+                    <p>Hybrid Lash Extensions</p>
+                </div>
+                <div class="service">
+                    <img src="images/im5.jpg" alt="Special Occasion Lashes">
+                    <p>Special Occasion Lashes</p>
+                </div>
+            </div>
+    </section>
+    <section class="section">
+        <div>
+            <h2>Book Below</h2>
+        </div>
+        </div>
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1CgE3xxaFCoEdLRkaxBDh_DUBg8Bm0muDJcqu6GyEq6YZ4Nc3AIq7pxYIuL-mVWlXzFVmK_bJA?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+        <!-- end Google Calendar Appointment Scheduling -->
+    </section>
+    <section class="section" id="gallery">
+        <h2>Gallery</h2>
+        <p>Take a look at our stunning transformations and get inspired for your next look.</p>
+        <div class="images">
+            <img src="images/im2.jpg" alt="Lash Transformation 1">
+            <img src="images/im3.jpg" alt="Lash Transformation 2">
+            <img src="images/im4.jpg" alt="Lash Transformation 3">
+            <img src="images/im5.jpg" alt="Lash Transformation 4">
+            <img src="images/im6.jpg" alt="Lash Transformation 5">
+            <img src="images/im7.jpg" alt="Lash Transformation 6">
+        </div>
+    </section>
+    <section class="section" id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Henny Artistry, where beauty meets precision! We specialize in premium lash extensions that enhance your natural beauty and make your eyes unforgettable. Our mission is to provide each client with personalized services in a relaxing and luxurious environment. Whether you're looking for a natural look or a dramatic transformation, our skilled lash artists are here to make your vision come to life.</p>
+    </section>
+    <section class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or ready to book your appointment? Get in touch with us!</p>
+        <div class="contact-info">
+            <div><i class="fas fa-phone-alt"></i> Phone: [Your Phone Number]</div>
+            <div><i class="fas fa-envelope"></i> Email: [Your Email Address]</div>
+            <div><i class="fas fa-map-marker-alt"></i> Address: [Your Address]</div>
+        </div>
+    </section>
+
+    <div id="popup">
+        <img src="" alt="Popup Image">
+    </div>
+
+    <script>
+        const images = document.querySelectorAll('.images img');
+        const popup = document.getElementById('popup');
+        const popupImg = popup.querySelector('img');
+
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                popupImg.src = img.src;
+                popup.style.display = 'flex';
+            });
+        });
+
+        popup.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
